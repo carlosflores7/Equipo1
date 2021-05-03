@@ -26,9 +26,9 @@ public class Operaciones extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        txtPantalla = new javax.swing.JTextField();
+        txtOperando1 = new javax.swing.JTextField();
+        txtOperador = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
@@ -58,90 +58,123 @@ public class Operaciones extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTextField1.setText("jTextField1");
+        txtPantalla.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        txtPantalla.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtPantalla.setText("0");
 
-        jTextField2.setText("jTextField2");
+        txtOperando1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        txtOperando1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
-        jTextField3.setText("jTextField3");
+        txtOperador.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        txtOperador.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         jPanel1.setLayout(new java.awt.GridLayout(5, 0));
 
         jPanel2.setLayout(new java.awt.GridLayout(0, 4, 1, 0));
 
-        jButton1.setText("jButton1");
+        jButton1.setBackground(new java.awt.Color(102, 204, 255));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton1.setText("C");
         jPanel2.add(jButton1);
 
-        jButton2.setText("jButton2");
+        jButton2.setBackground(new java.awt.Color(102, 204, 255));
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton2.setText("Ce");
         jPanel2.add(jButton2);
 
-        jButton3.setText("jButton3");
+        jButton3.setBackground(new java.awt.Color(102, 204, 255));
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton3.setText("<---");
         jPanel2.add(jButton3);
 
-        jButton4.setText("jButton4");
+        jButton4.setBackground(new java.awt.Color(102, 255, 102));
+        jButton4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton4.setText("%");
         jPanel2.add(jButton4);
 
         jPanel1.add(jPanel2);
 
         jPanel3.setLayout(new java.awt.GridLayout(0, 4, 1, 0));
 
-        jButton5.setText("jButton5");
+        jButton5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton5.setText("7");
         jPanel3.add(jButton5);
 
-        jButton6.setText("jButton6");
+        jButton6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton6.setText("8");
         jPanel3.add(jButton6);
 
-        jButton7.setText("jButton7");
+        jButton7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton7.setText("9");
         jPanel3.add(jButton7);
 
-        jButton8.setText("jButton8");
+        jButton8.setBackground(new java.awt.Color(102, 255, 102));
+        jButton8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton8.setText("/");
         jPanel3.add(jButton8);
 
         jPanel1.add(jPanel3);
 
         jPanel4.setLayout(new java.awt.GridLayout(0, 4, 1, 0));
 
-        jButton9.setText("jButton9");
+        jButton9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton9.setText("4");
         jPanel4.add(jButton9);
 
-        jButton10.setText("jButton10");
+        jButton10.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton10.setText("5");
         jPanel4.add(jButton10);
 
-        jButton11.setText("jButton11");
+        jButton11.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton11.setText("6");
         jPanel4.add(jButton11);
 
-        jButton12.setText("jButton12");
+        jButton12.setBackground(new java.awt.Color(102, 255, 102));
+        jButton12.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton12.setText("x");
         jPanel4.add(jButton12);
 
         jPanel1.add(jPanel4);
 
         jPanel5.setLayout(new java.awt.GridLayout(0, 4, 1, 0));
 
-        jButton13.setText("jButton13");
+        jButton13.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton13.setText("1");
         jPanel5.add(jButton13);
 
-        jButton14.setText("jButton14");
+        jButton14.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton14.setText("2");
         jPanel5.add(jButton14);
 
-        jButton15.setText("jButton15");
+        jButton15.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton15.setText("3");
         jPanel5.add(jButton15);
 
-        jButton16.setText("jButton16");
+        jButton16.setBackground(new java.awt.Color(102, 255, 102));
+        jButton16.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton16.setText("-");
         jPanel5.add(jButton16);
 
         jPanel1.add(jPanel5);
 
         jPanel6.setLayout(new java.awt.GridLayout(0, 4, 1, 0));
 
-        jButton17.setText("jButton17");
+        jButton17.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton17.setText("0");
         jPanel6.add(jButton17);
 
-        jButton18.setText("jButton18");
+        jButton18.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton18.setText(".");
         jPanel6.add(jButton18);
 
-        jButton19.setText("jButton19");
+        jButton19.setBackground(new java.awt.Color(255, 153, 51));
+        jButton19.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton19.setText("=");
         jPanel6.add(jButton19);
 
-        jButton20.setText("jButton20");
+        jButton20.setBackground(new java.awt.Color(102, 255, 102));
+        jButton20.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton20.setText("+");
         jPanel6.add(jButton20);
 
         jPanel1.add(jPanel6);
@@ -150,24 +183,24 @@ public class Operaciones extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTextField1)
+            .addComponent(txtPantalla)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtOperando1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField3))
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(txtOperador))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 341, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
-                    .addComponent(jTextField3))
+                    .addComponent(txtOperando1)
+                    .addComponent(txtOperador))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtPantalla, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 399, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 385, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -236,8 +269,8 @@ public class Operaciones extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField txtOperador;
+    private javax.swing.JTextField txtOperando1;
+    private javax.swing.JTextField txtPantalla;
     // End of variables declaration//GEN-END:variables
 }
